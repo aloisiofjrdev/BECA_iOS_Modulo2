@@ -136,7 +136,7 @@
                                                     </variation>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIW-Cw-eaX">
-                                                    <rect key="frame" x="711" y="150.5" width="42" height="23.5"/>
+                                                    <rect key="frame" x="263" y="150.5" width="42" height="23.5"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -145,7 +145,7 @@
                                                     </variation>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9do-wn-xMw">
-                                                    <rect key="frame" x="13" y="28" width="742" height="125.5"/>
+                                                    <rect key="frame" x="13" y="28" width="294" height="125.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vmc-qS-eAU">
                                                     <rect key="frame" x="13" y="4" width="41" height="21"/>
@@ -217,10 +217,10 @@
             </objects>
             <point key="canvasLocation" x="136.69064748201438" y="131.65467625899282"/>
         </scene>
-        <!--View Controller-->
+        <!--Pacotes Viagens View Controller-->
         <scene sceneID="tKQ-vE-OV5">
             <objects>
-                <viewController id="t1t-vo-wmX" sceneMemberID="viewController">
+                <viewController id="t1t-vo-wmX" customClass="PacotesViagensViewController" customModule="Alura_Viagens" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rT5-Nk-ln1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -259,7 +259,7 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" id="ZsR-qX-5d9">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="celulaPacote" id="ZsR-qX-5d9" customClass="PacoteViagemCollectionViewCell" customModule="Alura_Viagens" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -281,6 +281,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9b9-wI-OpX"/>
                     </view>
+                    <connections>
+                        <outlet property="colecaoPacotesViagem" destination="jcG-9x-8uP" id="pUg-Hd-oPE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4I6-fN-0gB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
