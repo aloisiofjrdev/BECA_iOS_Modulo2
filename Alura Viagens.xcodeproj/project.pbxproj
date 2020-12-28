@@ -12,6 +12,8 @@
 		D332414E2593ABB4007B69B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D332414C2593ABB4007B69B8 /* Main.storyboard */; };
 		D33241502593ABBA007B69B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D332414F2593ABBA007B69B8 /* Assets.xcassets */; };
 		D33241532593ABBA007B69B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D33241512593ABBA007B69B8 /* LaunchScreen.storyboard */; };
+		D332415B259979CF007B69B8 /* Viagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D332415A259979CF007B69B8 /* Viagem.swift */; };
+		D332415D25997B1D007B69B8 /* ViagemDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D332415C25997B1D007B69B8 /* ViagemDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		D332414F2593ABBA007B69B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D33241522593ABBA007B69B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D33241542593ABBA007B69B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D332415A259979CF007B69B8 /* Viagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viagem.swift; sourceTree = "<group>"; };
+		D332415C25997B1D007B69B8 /* ViagemDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViagemDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				D33241482593ABB4007B69B8 /* AppDelegate.swift */,
 				D332414A2593ABB4007B69B8 /* ViewController.swift */,
+				D332415A259979CF007B69B8 /* Viagem.swift */,
+				D332415C25997B1D007B69B8 /* ViagemDAO.swift */,
 				D332414C2593ABB4007B69B8 /* Main.storyboard */,
 				D332414F2593ABBA007B69B8 /* Assets.xcassets */,
 				D33241512593ABBA007B69B8 /* LaunchScreen.storyboard */,
@@ -136,7 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D332414B2593ABB4007B69B8 /* ViewController.swift in Sources */,
+				D332415B259979CF007B69B8 /* Viagem.swift in Sources */,
 				D33241492593ABB4007B69B8 /* AppDelegate.swift in Sources */,
+				D332415D25997B1D007B69B8 /* ViagemDAO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
