@@ -361,5 +361,54 @@
             </objects>
             <point key="canvasLocation" x="984.375" y="130.98591549295776"/>
         </scene>
+        <!--Detalhes Viagens View Controller-->
+        <scene sceneID="bAv-fn-TSx">
+            <objects>
+                <viewController storyboardIdentifier="detalhes" id="rKU-eG-gI8" customClass="DetalhesViagensViewController" customModule="Alura_Viagens" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="18a-2I-C5M">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="79b-lb-F3z">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y4c-sH-ech">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="185"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PORTO DE GALINHAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aw4-By-RgZ">
+                                        <rect key="frame" x="0.0" y="185" width="320" height="336"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="23"/>
+                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pacote: Hotel + café da manhã" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESW-0G-Yfn">
+                                        <rect key="frame" x="0.0" y="521" width="320" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 dias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJe-LA-LNQ">
+                                        <rect key="frame" x="0.0" y="544.5" width="320" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="79b-lb-F3z" firstAttribute="leading" secondItem="omt-VP-2OR" secondAttribute="leading" id="FI7-Pi-7Hx"/>
+                            <constraint firstItem="79b-lb-F3z" firstAttribute="bottom" secondItem="omt-VP-2OR" secondAttribute="bottom" id="JFa-VY-hmj"/>
+                            <constraint firstItem="79b-lb-F3z" firstAttribute="trailing" secondItem="omt-VP-2OR" secondAttribute="trailing" id="M9m-Yz-00h"/>
+                            <constraint firstItem="79b-lb-F3z" firstAttribute="top" secondItem="18a-2I-C5M" secondAttribute="top" id="Mfz-mm-9Gh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="omt-VP-2OR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hk5-Dl-gAP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1822.5" y="130.98591549295776"/>
+        </scene>
     </scenes>
 </document>
