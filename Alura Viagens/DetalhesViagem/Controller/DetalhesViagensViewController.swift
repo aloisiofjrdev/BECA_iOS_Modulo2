@@ -15,13 +15,13 @@ class DetalhesViagensViewController: UIViewController {
     @IBOutlet weak var labelDescricaoPacoteViagem: UILabel!	
     @IBOutlet weak var labelDataViagem: UILabel!
     @IBOutlet weak var labelPrecoPacoteViagem: UILabel!
-    
+    @IBOutlet weak var scrowPrincipal: UIScrollView!
     var pacoteSelecionado:PacoteViagem? = nil
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(aumentarScroll(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil )
         if let pacote = pacoteSelecionado {
             self.imagemPacoteViagem.image = UIImage(named: pacote.viagem.caminhoDaImagem)
             self.labelTituloPacoteViagem.text = pacote.viagem.titulo
@@ -31,6 +31,10 @@ class DetalhesViagensViewController: UIViewController {
         }
 
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func aumentarScroll(notification:Notification){
+        self.scrowPrincipal.contentSize = CGSize(width: self.scrowPrincipal.frame.width, height: self.scrowPrincipal.frame.height + 320)
     }
     
     
