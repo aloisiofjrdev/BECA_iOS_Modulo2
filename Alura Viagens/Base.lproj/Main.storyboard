@@ -505,6 +505,14 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aB-u4-t9z">
+                                <rect key="frame" x="21" y="14" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="voltar"/>
+                                <connections>
+                                    <action selector="botaoVoltar:" destination="rKU-eG-gI8" eventType="touchUpInside" id="J9n-tU-9NR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -514,6 +522,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="omt-VP-2OR"/>
                     </view>
+                    <connections>
+                        <outlet property="imagemPacoteViagem" destination="y4c-sH-ech" id="cKs-X8-tXv"/>
+                        <outlet property="labelDataViagem" destination="awW-1N-XOb" id="X8T-IK-odi"/>
+                        <outlet property="labelDescricaoPacoteViagem" destination="ESW-0G-Yfn" id="T0y-n8-JAV"/>
+                        <outlet property="labelPrecoPacoteViagem" destination="oY7-r5-WkL" id="LHz-oW-tm0"/>
+                        <outlet property="labelTituloPacoteViagem" destination="aw4-By-RgZ" id="Duc-6G-Vtp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hk5-Dl-gAP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
