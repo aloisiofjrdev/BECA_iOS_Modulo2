@@ -37,6 +37,7 @@
 		D33241A2259B9697007B69B8 /* img11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D3324191259B9697007B69B8 /* img11.jpg */; };
 		D33241A3259B9697007B69B8 /* img10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D3324192259B9697007B69B8 /* img10.jpg */; };
 		D33241A4259B9697007B69B8 /* icon_hotel.png in Resources */ = {isa = PBXBuildFile; fileRef = D3324193259B9697007B69B8 /* icon_hotel.png */; };
+		D33241A9259BF15C007B69B8 /* ConfirmacaoPagamentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33241A8259BF15C007B69B8 /* ConfirmacaoPagamentoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		D3324191259B9697007B69B8 /* img11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img11.jpg; sourceTree = "<group>"; };
 		D3324192259B9697007B69B8 /* img10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img10.jpg; sourceTree = "<group>"; };
 		D3324193259B9697007B69B8 /* icon_hotel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_hotel.png; sourceTree = "<group>"; };
+		D33241A8259BF15C007B69B8 /* ConfirmacaoPagamentoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmacaoPagamentoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				D332416E25998A9E007B69B8 /* Home */,
 				D3324172259A3A2D007B69B8 /* Pacotes */,
 				D3324179259B8CD9007B69B8 /* DetalhesViagem */,
+				D33241A6259BF104007B69B8 /* ConfirmacaoPagamento */,
 				D332417125998AFF007B69B8 /* ViagemDAO */,
 				D332414C2593ABB4007B69B8 /* Main.storyboard */,
 				D3324182259B9697007B69B8 /* Assets */,
@@ -236,6 +239,22 @@
 			path = "../../../../Downloads/arquivos-externos/Assets";
 			sourceTree = "<group>";
 		};
+		D33241A6259BF104007B69B8 /* ConfirmacaoPagamento */ = {
+			isa = PBXGroup;
+			children = (
+				D33241A7259BF134007B69B8 /* Controller */,
+			);
+			path = ConfirmacaoPagamento;
+			sourceTree = "<group>";
+		};
+		D33241A7259BF134007B69B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D33241A8259BF15C007B69B8 /* ConfirmacaoPagamentoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -331,6 +350,7 @@
 				D332417D259B8D4E007B69B8 /* DetalhesViagensViewController.swift in Sources */,
 				D3324181259B9646007B69B8 /* PacoteViagemDAO.swift in Sources */,
 				D3324176259A3A82007B69B8 /* PacotesViagensViewController.swift in Sources */,
+				D33241A9259BF15C007B69B8 /* ConfirmacaoPagamentoViewController.swift in Sources */,
 				D3324178259A3BF1007B69B8 /* PacoteViagemCollectionViewCell.swift in Sources */,
 				D332415D25997B1D007B69B8 /* ViagemDAO.swift in Sources */,
 				D332417F259B941F007B69B8 /* PacoteViagem.swift in Sources */,
