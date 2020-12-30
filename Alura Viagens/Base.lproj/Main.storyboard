@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pa4-gP-ADK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cjE-H3-hex">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,27 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="wjf-1p-OrA">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="cjE-H3-hex" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kDF-Zv-lp8">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Pa4-gP-ADK" kind="relationship" relationship="rootViewController" id="7KG-fa-eHB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q3C-F8-sHF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1535" y="131"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="pmN-Y0-RTb">
             <objects>
                 <tabBarController id="Pa4-gP-ADK" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="PI3-T4-wVY"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fNa-tq-JlR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -225,7 +242,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="procurar" id="Z3Q-FO-keh"/>
+                    <tabBarItem key="tabBarItem" title="procurar" image="icon_search.png" id="Z3Q-FO-keh"/>
                     <connections>
                         <outlet property="tabelaViagens" destination="gSH-9F-bas" id="hIt-Ml-4WB"/>
                         <outlet property="viewHoteis" destination="sIk-AM-HT3" id="tnN-So-P2h"/>
@@ -256,7 +273,7 @@
                                         <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="aFk-Qt-lLb">
+                                    <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="aFk-Qt-lLb">
                                         <rect key="frame" x="0.0" y="33" width="345" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="eQt-Cl-dzT"/>
@@ -350,7 +367,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9b9-wI-OpX"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="pacotes" id="Kpr-3H-a4h"/>
+                    <tabBarItem key="tabBarItem" title="pacotes" image="icon_package.png" id="Kpr-3H-a4h"/>
                     <connections>
                         <outlet property="colecaoPacotesViagem" destination="jcG-9x-8uP" id="pUg-Hd-oPE"/>
                         <outlet property="labelContadorPacotes" destination="Rxl-uM-36S" id="m79-PB-MQ7"/>
@@ -714,6 +731,9 @@
                                         <state key="normal" title="voltar para home">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="botaoVoltarHome:" destination="gOm-d8-HAh" eventType="touchUpInside" id="yVX-d8-mTc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -730,6 +750,7 @@
                         <viewLayoutGuide key="safeArea" id="xeM-11-7Ek"/>
                     </view>
                     <connections>
+                        <outlet property="botaoVoltarHome" destination="AIf-cU-fQO" id="8kK-Mk-nVt"/>
                         <outlet property="imagemPacoteViagem" destination="hXa-LR-hlk" id="X5A-sA-JAO"/>
                         <outlet property="labelDataPacoteViagem" destination="TDW-aE-wUl" id="nks-pO-hhP"/>
                         <outlet property="labelDescricaoPacoteViagem" destination="0Pv-4e-jwU" id="qE1-fj-p8c"/>
@@ -748,5 +769,7 @@
         <image name="icon_back.png" width="50" height="50"/>
         <image name="icon_breakfast.png" width="50" height="50"/>
         <image name="icon_hotel.png" width="50" height="50"/>
+        <image name="icon_package.png" width="25" height="25"/>
+        <image name="icon_search.png" width="25" height="25"/>
     </resources>
 </document>
